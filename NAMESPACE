@@ -1,0 +1,25 @@
+##useDynLib(blas, dqr, share_debug)
+## useDynLib(cshare, share_debug)
+
+##importFrom(methods, setGeneric, setClass, classRepresentation)
+import(methods)
+importFrom("MASS", "ginv")
+importFrom("graphics", "axis")
+importFrom("stats", "pchisq", "pnorm")
+importFrom("haplo.stats", "geno1to2", "haplo.em","haplo.em.control")
+
+export(cshare, shareTest)
+
+## general methods
+exportMethods(nSNP, nameSNP, nSeq, nameSeq)
+
+exportClasses(genoSet)
+exportMethods(genoSeq, phenoData, haplo)
+
+exportClasses(haploSet)
+exportMethods(haploSeq, haploFreq)
+
+exportClasses(haplo)
+
+exportClasses(share)
+exportMethods(dplot)

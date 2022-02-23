@@ -1,0 +1,21 @@
+Package: SHARE
+Type: Package
+Title: SNP-Haplotype Adaptive REgression (SHARE)
+Version: 1.1.1
+Date: 2022-02-18
+Author: James Dai, Kevin Wang
+Maintainer: James Dai <jdai@fredhutch.org>
+Description: This is an adaptive algorithm to select the most informative set of SNPs for genetic association. Methods used in the package refer to James Y. Dai, Michael Leblanc, Nicholas L Smith, Bruce Psaty, Charles Kooperberg (2009) <doi:10.1093/biostatistics/kxp023>.
+License: GPL (>= 2)
+LazyLoad: no
+Depends: R (>= 3.5.0), methods
+Collate: S4-class.R genoSet-class.R haploSet-class.R haplo-class.R
+        share-class.R finalsubset.R cshare.R zzz.SHARE.R
+Imports: haplo.stats,
+         MASS
+Repository: CRAN
+Date/Publication: 2022-02-18 07:49:55
+Suggests: 
+    rmarkdown,
+    knitr
+VignetteBuilder: knitr
